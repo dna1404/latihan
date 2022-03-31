@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Macaronn</title>
+</head>
+<body>
+    <section class="nav">
+        <div class="circle">
+        </div>
+        <header>
+            <a href="#" >
+                <img src="logo.png" class="logo" style="height: 60px;">
+            </a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">What's New</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Senyuman Manis Mu<br>Seperti <span>Macaron</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem,
+                     aliquid voluptatibus eligendi aspernatur accusantium nulla cumque.
+                      Sint natus nostrum beatae eveniet tempore enim dignissimos dicta. Voluptatibus,
+                       eligendi non! Consequuntur, excepturi?</p>
+                <a href="" class="btn">Lihat Kuy</a>
+            </div>
+                <div class="imgBox">
+                    <img src="1.png" alt="" class="macaron" style="height: 400px;">
+                </div>
+        </div>
+       
+        <ul class="thumb">
+            <li><img src="1.png" alt="" onclick="imgSlider('1.png');changeCircleColor('#FFBED8')"></li>
+            <li><img src="2.png" alt="" onclick="imgSlider('2.png');changeCircleColor('#65C18C')"></li>
+            <li><img src="3.png" alt="" onclick=""></li>
+        </ul>
+        
+       
+    </section>
+    <div class="menu">
+        <h2>Pilih Menu</h2>
+        <div class="gambar">
+        <img src="menu.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        function imgSlider(anything){
+            document.querySelector('.macaron').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+
+<!-- create navigation -->
+
+</body>
+</html>
