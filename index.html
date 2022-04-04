@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="style.css">
     <title>Macaronn</title>
 </head>
 <body>
+  
     <section class="nav">
         <div class="circle">
         </div>
@@ -17,20 +19,17 @@
                 <img src="logo.png" class="logo" style="height: 60px;">
             </a>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">What's New</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#what">What's</a></li>
+                <li><a href="#flavor">Flavor</a></li>
+               
             </ul>
         </header>
-        <div class="content">
+        <div class="content" id="home">
             <div class="textBox">
-                <h2>Senyuman Manis Mu<br>Seperti <span>Macaron</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem,
-                     aliquid voluptatibus eligendi aspernatur accusantium nulla cumque.
-                      Sint natus nostrum beatae eveniet tempore enim dignissimos dicta. Voluptatibus,
-                       eligendi non! Consequuntur, excepturi?</p>
-                <a href="" class="btn">Lihat Kuy</a>
+                <h2>Kamu itu Bagaikan <span>Macaron</span><br>Manisnya tiada Henti</h2>
+                <p>Apakah kamu tahu kue kering bulat berwarna-warni yang ditumpuk dengan isian manis asal Prancis?</p>
+                <a href="#what" class="btn">Apa itu ?</a>
             </div>
                 <div class="imgBox">
                     <img src="1.png" alt="" class="macaron" style="height: 400px;">
@@ -40,17 +39,74 @@
         <ul class="thumb">
             <li><img src="1.png" alt="" onclick="imgSlider('1.png');changeCircleColor('#FFBED8')"></li>
             <li><img src="2.png" alt="" onclick="imgSlider('2.png');changeCircleColor('#65C18C')"></li>
-            <li><img src="3.png" alt="" onclick=""></li>
+            <li><img src="3.png" alt="" onclick="imgSlider('3.png');changeCircleColor('#FFD36E')"></li>
         </ul>
         
-       
+     
     </section>
-    <div class="menu">
-        <h2>Pilih Menu</h2>
-        <div class="gambar">
-        <img src="menu.jpg" alt="">
+    <section id="what">
+        <div class="container">
+             <div class="imgBox">
+                <img src="menu.jpg" class="content_img">
+            </div>
+            <div class="textBox_container">
+                <span class="section-subtitle">What's</span>
+                <h2 class="section-title">Macaron itu apa ?</h2>
+                <p class="content__description">Macaron, (dibaca mack-a-ROHN) adalah kue kering yang berasal dari Prancis berbasis meringue yang terbuat dari tepung almond, putih telur dan gula bubuk atau icing sugar. Macaron bentuk bulat dan ditumpuk seperti sandwiches dengan isian manis seperti selai, buttercream atau ganache. Tekstur luarnya renyah dan lembut di dalam. Tampilannya menarik dengan warna-warna yang lucu menggemaskan.</p>
+                <a href="#flavor" class="btn">Flavor</a>
+            </div>
+           
+            
+        </div>
+    </section>
+    <div class="flavor" id="flavor">
+        <h3 class="sub-heading">Flavor</h3>
+        <h1 class="heading">Popular Flavor</h1>
+        <div class="box-container">
+            <div class="box">
+           
+            <img src="1.png" alt="" height="90">
+            <h3>Raspberry</h3>
+            </div>
+            <div class="box">
+               
+                <img src="2.png" alt="" height="90">
+                <h3>Green Tea</h3>
+            </div>
+            <div class="box">
+              
+                <img src="3.png" alt="" height="90">
+                <h3>Orange</h3>
+                </div>
+           
         </div>
     </div>
+    <div class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Location</h3>
+                <a href="">Bogor</a>
+                <a href="">Jakarta</a>
+                <a href="">Bandung</a>
+                <a href="">Depok</a>
+            </div>
+            <div class="box">
+                <h3>Menu</h3>
+                <a href="#home">Home</a>
+                <a href="#what">What's</a>
+                <a href="#flavor">Flavor</a>
+              
+            </div>
+            <div class="box">
+                <h3>Follow Me</h3>
+               
+                <a href="https://web.facebook.com/jack.gaming.90857/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/dimas_nch/" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <div class="credit">Copyright @2022 By <span>Dimas Nurcahya</span></div>
+    </div>
+
     <script>
         function imgSlider(anything){
             document.querySelector('.macaron').src = anything;

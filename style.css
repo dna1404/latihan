@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     
+}
+html{
+    scroll-behavior: smooth;
 }
 section{
     position: relative;
@@ -26,6 +30,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
+   
 }
 header .logo{
     position: relative;
@@ -46,6 +52,30 @@ header ul li a{
     margin-left: 40px;
     text-decoration: none;
 }
+.sub-heading{
+    text-align: center;
+    color: #FA4EAB;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.heading{
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.textBox_container{
+    margin-left: 20px;
+}
 .content{
     position: relative;
     width: 100%;
@@ -62,18 +92,18 @@ header ul li a{
     font-weight: 500;
     color: #333;
    line-height: 1.4em;
-   font-family: 'Amatic SC', cursive;
+  
 }
 .content .textBox h2 span{
     color: #ff64dd;
     font-weight: 1000;
     font-size: 1.2em;
-    font-family: 'Amatic SC', cursive;
+    
 }
 .content .textBox p{
     color: #333;
 }
-.content .textBox a{
+.btn{
     display: inline-block;
     margin-top: 0 20px;
     padding: 8px 20px;
@@ -83,6 +113,11 @@ header ul li a{
     font-weight: 500;
     letter-spacing: 1px;
     text-decoration: none;
+}
+.content_img{
+    width: 300px;
+  border-radius: .5rem;
+  justify-self: center;
 }
 .gambar img{
     width: 100%;
@@ -118,9 +153,13 @@ header ul li a{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ff64dd;
-    clip-path: circle(600px at right 800px);
+    background: #FFBED8;
+    clip-path: circle(600px at right 500px);
+    
 }
+
+
+
 .menu{
     width: 100%;
     margin: auto;
@@ -130,4 +169,70 @@ header ul li a{
 .menu h2{
     font-family: 'Amatic SC', cursive;
     font-size: 60px;
+}
+#flavor{
+    background-color: #eee;
+}
+.flavor .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 0.5fr));
+    gap:1.5rem;
+    padding:1.8rem 7.5%;
+}
+
+.flavor .box-container .box{
+    padding:2rem;
+    background:#fff;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+   overflow: hidden;
+    text-align: center;
+    min-width: 200px;
+}
+
+
+.flavor .box-container .box img{
+    height:17rem;
+    margin:1rem 0;
+}
+
+.flavor .box-container .box h3{
+    color: black
+    font-size: 2.5rem;
+}
+.footer{
+    padding:2rem 7.5%;
+    
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 0fr));
+    gap:1.5rem;
+}
+.footer .box-container .box h3{
+    padding:.5rem 0;
+    font-size: 2rem;
+    color:black
+}
+
+.footer .box-container .box a{
+    display: block;
+    padding:.5rem 0;
+    font-size: 1rem;
+    color: black;
+}
+
+.footer .box-container .box a:hover{
+    color: #ff64dd;
+    text-decoration: underline;
+}
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 1rem;
+    color: black;
+    padding:.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
 }
